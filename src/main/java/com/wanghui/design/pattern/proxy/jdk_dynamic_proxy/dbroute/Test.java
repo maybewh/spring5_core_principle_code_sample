@@ -13,6 +13,9 @@ public class Test {
 
     public static void main(String[] args) throws ParseException {
 
+        //生成代理类$Proxy0.class，通过该类可分析JDK动态代理原理
+        System.setProperty("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+
         Order order = new Order();
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
